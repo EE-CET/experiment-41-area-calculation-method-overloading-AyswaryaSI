@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class AreaCalculator {
+public class AreaCalculator {
     void calculateArea(float radius) {
         double area = Math.PI * radius * radius;
         System.out.printf("%.2f\n", area);
@@ -13,18 +13,15 @@ class AreaCalculator {
         double area = 0.5 * base * height;
         System.out.printf("%.2f\n", area);
     }
-}
 
-public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         AreaCalculator obj = new AreaCalculator();
-        float radius = sc.nextFloat();
 
+        float radius = sc.nextFloat();
         float length = sc.nextFloat();
         float breadth = sc.nextFloat();
-
         double base = sc.nextDouble();
         double height = sc.nextDouble();
 
